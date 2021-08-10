@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Console } from 'console';
 import { PasswordGenerator } from 'src/Model/password-generator.model';
 import { RandomPasswordService } from './random-password.service';
 
@@ -12,7 +13,7 @@ export class AppComponent {
   private useLetters: boolean = false;
   private useNumbers: boolean = false;
   private useSymbols: boolean = false;
-  private passwordLength: number = 0;
+  private passwordLength: number = 5;
 
   generatedPassword: string = "";
   private passwordGenerator : PasswordGenerator = new PasswordGenerator();
@@ -20,12 +21,14 @@ export class AppComponent {
     private randomPasswordService : RandomPasswordService){
 
   }
-
+  validateForm() {
+    return !(this.passwordLength!=0 && (this.useSymbols || this.useNumbers || this.useLetters));
+  }
   getTheLength(value) {
     this.passwordLength = parseInt(value);
-    this.passwordGenerator.passwordLength = this.passwordLength;
   }
-  generatePassword() {   
+  generatePassword() {  
+    this.passwordGenerator.passwordLength = this.passwordLength ;
     this.generatedPassword = this.randomPasswordService.generateRandomPassword(this.passwordGenerator);
     console.log(this.generatedPassword);
   }

@@ -16,13 +16,5 @@ h1 {
 }
 
 #Generate {
-    width: fit-content;
-    margin-left:155px;
-    font-size: x-large;
-    background-color: darkturquoise;
-}
-
-#output {
-    margin-left: 55px;
-    font-size: x-large;
+    background-color: rgb(46, 37, 37);
 }
