@@ -1,0 +1,28 @@
+body {
+   
+}
+
+h1 {
+    padding-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Element {
+    border-width: medium;
+    padding-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Generate {
+    width: fit-content;
+    margin-left:155px;
+    font-size: x-large;
+    background-color: darkturquoise;
+}
+
+#output {
+    margin-left: 55px;
+    font-size: x-large;
+}
