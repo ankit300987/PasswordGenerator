@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Console } from 'console';
 import { PasswordGenerator } from 'src/Model/password-generator.model';
 import { RandomPasswordService } from './random-password.service';
 
