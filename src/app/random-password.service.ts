@@ -11,7 +11,7 @@ export class RandomPasswordService {
   generateRandomPassword(passwordGenerator: PasswordGenerator) {
     const numbers = '1234567890';
     const letters = 'abcdEfgHIjklmnOPQrsTnuWXyz';
-    const specialChar = '!@#$%^&*()?/-_';
+    const specialChar = '!@#$';
     let paswordLen = passwordGenerator.passwordLength;
     let randomPassword = '';
    
